@@ -2,6 +2,7 @@ node_modules
 package.json
 package-lock.json
 design
+README.md
 README-template.md
 style-guide.md
 *.sketch
