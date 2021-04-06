@@ -1,0 +1,12 @@
+node_modules
+package.json
+package-lock.json
+design
+README-template.md
+style-guide.md
+*.sketch
+*.fig
+*.xd
+.DS_Store
+.prettierignore
+webpack.config.js
