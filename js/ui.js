@@ -1,1 +1,0 @@
-export let element=document.getElementById('hello');
