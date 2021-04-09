@@ -1,16 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap");
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 body {
-  font-family: "Josefin Sans", sans-serif;
   background-color: var(--Very-Dark-Blue);
   /* color: white; */
   margin: 0;
+  min-height: 110vh;
 }
 header {
   height: 14rem;
@@ -92,13 +93,16 @@ header {
   margin-top: -30px;
   border-radius: 10px;
   width: 100%;
+  /* background-color: white; */
+  /* yeah its a trick to handle sub elements */
+  height: 10rem;
 }
 .todo-items {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  width: 100%;
-  /* background-color: rgb(138, 138, 138); */
+  width: var(--div-width-mob);
+  margin: 0 auto;
+  box-shadow: 0px 8px 16px 8px rgba(0, 0, 0, 0.2);
 }
 .todo-item {
   margin: 0 auto;
@@ -110,6 +114,7 @@ header {
   align-items: center;
   font-size: 12px;
   font-weight: 100;
+  /* box-shadow: 0px 8px 16px 8px rgba(0, 0, 0, 0.2); */
 }
 .todo-item > p {
   /* opacity: 0.9; */
@@ -167,13 +172,37 @@ header {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+.todo-info-2 {
+  display: flex;
+  margin-top: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 8px 16px 8px rgba(0, 0, 0, 0.2);
+  /* justify-content: center; */
+  padding: 1.2rem 5rem;
+}
+.todo-info-2 > button {
+  border: none;
+  background: var(--Very-Dark-Desaturated-Blue);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--Dark-Grayish-Blue);
+  cursor: pointer;
+  outline: none;
+}
+.todo-info-2 > button:focus {
+  outline: none;
+  /* color: var(--primary-b-blue); */
+}
+.todo-info-2 > button:hover {
+  color: var(--primary-b-blue);
+}
+.todo-info-2 > button:active {
+  color: var(--primary-b-blue);
+}
 
 /* Reuseable Classes */
-.shaadow {
-  -webkit-box-shadow: 0px 0px 10px rgb(255, 253, 253); /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  /* -moz-box-shadow: 3px 3px 5px 6px #ccc; Firefox 3.5 - 3.6 */
-  /* box-shadow: 3px 3px 5px 6px #ccc; Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-}
+
 .d-flex {
   display: flex;
   flex-direction: column;
