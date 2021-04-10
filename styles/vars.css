@@ -1,9 +1,14 @@
 :root {
   --div-width-mob: 21rem;
   --div-width: 23rem;
+  --default: white;
   /* colors */
   --primary-b-blue: hsl(220, 98%, 61%);
-  --check-bkg: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+  --check-bkg: linear-gradient(
+    to right bottom,
+    hsl(192, 100%, 67%),
+    hsl(280, 87%, 65%)
+  );
   /* Dark Theme */
   --Very-Dark-Blue: hsl(235, 21%, 11%);
   --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
