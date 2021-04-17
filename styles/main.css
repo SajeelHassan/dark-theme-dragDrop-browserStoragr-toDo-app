@@ -126,6 +126,7 @@ header {
 .todo-item > p {
   /* opacity: 0.9; */
   color: var(--Dark-Grayish-Blue);
+  color: rgba(255, 255, 255, 0.623);
   padding: 0 0.3rem;
 }
 /* ---------------/ */
@@ -218,10 +219,13 @@ header {
 }
 .todo-item input[type="checkbox"]::after {
   content: "\2714";
-  color: white;
-  text-align: center;
-  /* margin-top: 2px; */
+
+  margin-top: 2px;
   display: none;
+  /* typography */
+  color: white;
+  font-size: 12px;
+  text-align: center;
 }
 .todo-item input[type="checkbox"]:checked {
   background: var(--check-bkg);
@@ -240,6 +244,10 @@ header {
   border: 10px solid var(--check-bkg);
 }
 
+.nothing {
+  color: rgba(255, 255, 255, 0.623);
+  border-radius: 5px;
+}
 /* Reuseable Classes */
 
 .d-flex {
