@@ -1,3 +1,3 @@
-import {theUI} from './ui';
+import { theUI } from "./ui";
 
 console.log("ljjhkjhkjhkjhkjhkjhkjhjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj");
